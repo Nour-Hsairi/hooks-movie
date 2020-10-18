@@ -45,7 +45,7 @@ const [searchList, setSearchList]=useState(movies);
   function handleFunction() { setTest(!test); }
 
   function searchByName(movieSearch) {
-    setSearchList(movies.filter(el => el.name.toUpperCase().startsWith(movieSearch.toUpperCase())));
+    setSearchList(movies.filter(el => el.name.toUpperCase().includes(movieSearch.toUpperCase())));
     setTestSearch(true);
   }
 
